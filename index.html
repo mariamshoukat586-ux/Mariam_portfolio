@@ -1,178 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mariam Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariam Portfolio</title>
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
-
-body{
-    background:linear-gradient(135deg,#0f172a,#020617);
-    color:white;
-}
-
-/* NAVBAR */
-nav{
-    display:flex;
-    justify-content:space-between;
-    padding:20px 50px;
-    background:rgba(0,0,0,0.4);
-}
-
-nav h2{color:#38bdf8;}
-
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:20px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-}
-
-/* HERO */
-.hero{
-    text-align:center;
-    padding:80px 20px;
-}
-
-.hero img{
-    width:120px;
-    border-radius:50%;
-    margin-bottom:20px;
-    border:3px solid #38bdf8;
-}
-
-.hero h1{
-    font-size:45px;
-}
-
-.hero span{color:#38bdf8;}
-
-.hero p{color:#94a3b8;}
-
-.btn{
-    margin-top:20px;
-    display:inline-block;
-    padding:10px 20px;
-    background:#38bdf8;
-    color:black;
-    border-radius:8px;
-    text-decoration:none;
-}
-
-/* SECTION */
-section{
-    padding:60px 30px;
-    text-align:center;
-}
-
-h2{
-    color:#38bdf8;
-    margin-bottom:20px;
-}
-
-.cards{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-}
-
-.card{
-    background:rgba(255,255,255,0.05);
-    padding:20px;
-    width:250px;
-    border-radius:12px;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:scale(1.05);
-    background:rgba(56,189,248,0.2);
-}
-
-/* CONTACT */
-.social a{
-    margin:10px;
-    display:inline-block;
-    color:#38bdf8;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-/* FOOTER */
-footer{
-    background:black;
-    padding:15px;
-    text-align:center;
-}
-
-/* MOBILE */
-@media(max-width:600px){
-    nav{flex-direction:column;align-items:center;}
-}
-</style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- Navbar -->
 <nav>
-    <h2>Mariam</h2>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+  <h2>Mariam</h2>
+  <button onclick="toggleMode()">🌙</button>
 </nav>
 
-<div class="hero">
-    <img src="https://via.placeholder.com/120" alt="profile">
-    <h1>Hi, I'm <span>Mariam Shoukat</span></h1>
-    <p>Frontend Developer | HTML | CSS</p>
-    <a href="#contact" class="btn">Contact Me</a>
-</div>
+<!-- Hero -->
+<header>
+  <h1>Hi, I'm Mariam 👋</h1>
+  <p>Creative Web Designer | HTML CSS Expert</p>
+  <a href="#projects" class="btn">View Work</a>
+</header>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>I am a passionate beginner web developer learning modern web design.</p>
+<!-- About -->
+<section>
+  <h2>About Me</h2>
+  <p>I create modern, responsive and user-friendly websites that help businesses grow online.</p>
 </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="cards">
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">GitHub</div>
-    </div>
+<!-- Skills -->
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Responsive Design</span>
+  </div>
 </section>
 
+<!-- Projects -->
 <section id="projects">
-    <h2>Projects</h2>
-    <div class="cards">
-        <div class="card">Portfolio Website</div>
-        <div class="card">More Coming Soon</div>
-    </div>
+  <h2>My Projects</h2>
+
+  <div class="project">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Portfolio Website</h3>
+    <p>Modern responsive portfolio</p>
+  </div>
+
+  <div class="project">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Landing Page</h3>
+    <p>Clean business landing page</p>
+  </div>
+
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: mariamshoukat586@gmail.com</p>
-
-    <div class="social">
-        <a href="#">GitHub</a>
-        <a href="#">https://www.linkedin.com/in/mariam-shoukat-98b867406?utm_source=share_via&utm_content=profile&utm_medium=member_android</a>
-    </div>
+<!-- Contact -->
+<section>
+  <h2>Contact Me</h2>
+  <p>Email: yourmail@gmail.com</p>
 </section>
 
-<footer>
-    <p>© 2026 Mariam Portfolio</p>
-</footer>
+<script src="script.js"></script>
 
 </body>
 </html>
